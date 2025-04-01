@@ -24,9 +24,9 @@ print(employees)
 
 # Task 3: Find the Column Index
 def column_index(column_name):
-    return employees["fields"].index(column_name)
+    return employees['fields'].index(column_name)
 
-employee_id_column = column_index("employee_id")
+employee_id_column = column_index('employee_id')
 
 # Task 4: Find the Employee First Name
 def first_name(row_number):
@@ -54,11 +54,6 @@ def sort_by_last_name():
 #Task 8: Create a dict for an Employee
 def employee_dict(row):
     return {key: value for key, value in zip(employees["fields"][1:], row[1:])}
-
-# print("Result:")
-# print(employees["row"][3])
-#print(employee_dict())
-
 
 #Task 9: A dict of dicts, for All Employees
 def all_employees_dict():
