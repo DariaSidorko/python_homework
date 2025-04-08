@@ -169,22 +169,26 @@ print(hangman("home", "eph"))
 
 # Task 10: Pig Latin, Another String Manipulation Exercise
 def pig_latin(text):
-    vowels = 'aeiou'
-    words = text.split()
+    vowels = "aeiou"
     result = []
 
-    for word in words:
-        if word.startswith(('qu')):  
-            result.append(word[2:] + 'quay')
-        elif word[0] in vowels:
-            result.append(word + 'ay')
+    for word in text.split():  # Split the sentence into words
+        if word[0] in vowels:
+            result.append(word + "ay")  # Rule 1: Starts with a vowel
         else:
-            index = 0
-            while index < len(word) and word[index] not in vowels:
-                index += 1
-            result.append(word[index:] + word[:index] + 'ay')
-    
-    return ' '.join(result)
+            # Rule 3: Special case for "qu"
+            if "qu" in word:
+                qu_index = word.index("qu") + 2
+                result.append(word[qu_index:] + word[:qu_index] + "ay")
+            else:
+                # Rule 2: Move consonants to the end until a vowel is found
+                for i, letter in enumerate(word):
+                    if letter in vowels:
+                        result.append(word[i:] + word[:i] + "ay")
+                        break
+
+    return " ".join(result)  # Join the modified words back into a sentence
+
 
 print(pig_latin("apple"))          
 print(pig_latin("banana"))  
