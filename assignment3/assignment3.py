@@ -1,6 +1,8 @@
 
 
-import pandas as pd  
+import pandas as pd 
+
+import json
 
 # **************************************
 
@@ -69,15 +71,13 @@ print(task2_employees)
 
 # 2. Read data from a JSON file:
 
-import json
-
 additional_employees = [
     {"Name": "Eve", "Age": 28, "City": "Miami", "Salary": 60000},
     {"Name": "Frank", "Age": 40, "City": "Seattle", "Salary": 95000}
 ]
 
-with open('additional_employees.json', 'w') as json_file:
-    json.dump(additional_employees, json_file)
+# with open('additional_employees.json', 'w') as json_file:
+#     json.dump(additional_employees, json_file)
 
 json_employees = pd.read_json('additional_employees.json')
 
