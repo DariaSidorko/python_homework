@@ -1,0 +1,10 @@
+
+
+One challenge I faced was identifying the correct HTML elements using Chrome Developer Tools, 
+as some content was deeply nested. I used the 'inspect' feature and carefully expanded child elements to 
+locate the right data points.
+
+
+Another challenge was interpreting the robots.txt policies correctly. 
+To resolve this, I cross-referenced with documentation on how robots.txt syntax works 
+and ensured my script avoided disallowed paths.
