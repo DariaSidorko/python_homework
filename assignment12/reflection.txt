@@ -1,0 +1,9 @@
+
+Static visualizations (like Matplotlib plots) are useful for reports or fixed analysis snapshots. 
+Interactive plots (Plotly, Dash) let users explore data by filtering, hovering, and zooming.
+
+Dashboards make it easier for stakeholders to monitor metrics in real time and explore insights independently, 
+improving decision-making without needing code changes.
+
+Interactive tools improve communication by making complex data more understandable and actionable through visual storytelling, 
+dynamic exploration, and accessible UI.
