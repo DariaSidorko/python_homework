@@ -1,0 +1,16 @@
+
+
+Restricted sections:
+- /w/
+- /wiki/Special:
+
+Specific rules:
+No, Wikipedia’s robots.txt does not contain specific rules for individual user agents like Googlebot or Bingbot.
+Instead, it uses the general rule to apply to all bots:
+User-agent: *
+
+
+Reflection:
+Websites use robots.txt to control how and where automated bots interact with their servers. 
+This prevents excessive server load and protects sensitive or dynamic content. 
+Respecting robots.txt is essential to promote ethical and responsible scraping practices.

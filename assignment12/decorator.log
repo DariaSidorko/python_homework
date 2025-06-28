@@ -1,0 +1,3 @@
+function: say_hello | positional parameters: none | keyword parameters: none | return: None
+function: accepts_args | positional parameters: [1, 2, 3, 'test'] | keyword parameters: none | return: True
+function: accepts_kwargs | positional parameters: none | keyword parameters: {'a': 1, 'b': 2, 'name': 'Daria'} | return: <function logger_decorator at 0x10491b600>
